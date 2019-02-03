@@ -17,6 +17,7 @@ import {
   TOKEN_MAKER,
   TOKEN_RHOC,
   TOKEN_WRAPPED_ETH,
+  TOKEN_DONUT
 } from '../constants';
 
 let brokers = fromJS({});
@@ -42,6 +43,10 @@ const init = networkName => {
   const DGD = loadContact(
     erc20Abi.interface,
     tokencontractsDeploymentAdressessList["DGD"]
+  );
+  const DONUT = loadContact(
+    erc20Abi.interface,
+    tokencontractsDeploymentAdressessList["DONUT"]
   );
   // const GNT = loadContact(
   //   erc20Abi.interface,
