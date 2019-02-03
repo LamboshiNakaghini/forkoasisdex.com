@@ -3,6 +3,7 @@ const https = require('https')
 const fs = require('fs');
 
 
+const geoip = require('geoip-lite');
 
 //nohup node index.js >> app.log 2>&1 &
 
@@ -27,8 +28,12 @@ app.set('trust proxy', true);
 app.use(wwwRedirect);
 
 app.use((req, res, next) => {
+
+  var ip = req.ip.replace('::ffff:', '');
+  var geo = geoip.lookup(ip);
+
   var now = new Date().toString();
-  var log = `${now}: ${req.method} ${req.url}`;
+  var log = `${now}: IP is ${ip} -- Country is ${geo.country} | ${req.method} ${req.url} -- Ref: ${req.headers.referer}`;
   console.log(log);
   fs.appendFile('server.log', log + '\n', (err) => {
     if (err) {
@@ -59,10 +64,7 @@ app.use (function (req, res, next) {
 
 
 app.get('*', (req, res) => {
-
-  res.sendfile('./build/200.html');
-
-
+  res.sendFile('200.html', { root: __dirname+'/build/' });
 });
 
 

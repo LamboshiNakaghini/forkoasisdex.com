@@ -20,7 +20,7 @@ class OasisTestingWarningMessage extends PureComponent {
               </span>
               <span styleName="Text">
                 <div>
-                  OasisDex is never shutting down. Long live the decentralised web.
+                  OasisDex is never shutting down. Long live the decentralised web. Email: forkoasisdex@protonmail.ch
                 </div>
               </span>
             </li>

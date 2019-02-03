@@ -18,7 +18,7 @@ const sections = [
     links: [
       {
         label: 'Project',
-        url: 'https://github.com/OasisDEX/oasis-react',
+        url: 'https://github.com/calbertuk/forkoasisdex.com',
       },
       // {
       //   label: 'Documentation',
@@ -33,14 +33,11 @@ const sections = [
   {
     // header: "MakerDAO",
     links: [
+
       {
-        label: 'Legal',
-        url: '/OasisToS.pdf',
-      },
-      // {
-      //   label: 'Chat',
-      //   url: 'https://chat.makerdao.com/',
-      // },
+        label: 'Telegram Chat',
+        url: 'https://t.me/ForkOasisDex',
+      }
       // {
       //   label: 'Reddit',
       //   url: 'https://www.reddit.com/r/MakerDAO/',
@@ -52,7 +49,7 @@ const sections = [
     links: [
       {
         label: 'Report Issues',
-        url: 'https://github.com/OasisDEX/oasis-react/issues/new',
+        url: 'https://github.com/calbertuk/forkoasisdex.com/issues/new',
       },
     ]
   },
