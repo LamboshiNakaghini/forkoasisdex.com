@@ -12,6 +12,7 @@ import {
   TOKEN_GOLEM,
   TOKEN_MAKER,
   TOKEN_RHOC,
+  TOKEN_DONUT,
   TOKEN_WRAPPED_ETH,
 } from '../../constants';
 import { generateTradingPairs } from "../../utils/generateTradingPairs";
@@ -29,6 +30,7 @@ const initialState = fromJS({
     // TOKEN_GOLEM,
     // TOKEN_WRAPPED_GNT,
     TOKEN_RHOC,
+    TOKEN_DONUT,
     TOKEN_DAI
   ],
   erc20Tokens: [
@@ -37,6 +39,7 @@ const initialState = fromJS({
     TOKEN_MAKER,
     // TOKEN_WRAPPED_GNT,
     TOKEN_DIGIX,
+    TOKEN_DONUT,
     TOKEN_RHOC,
   ],
   baseTokens: BASE_TOKENS,
@@ -50,6 +53,7 @@ const initialState = fromJS({
     [TOKEN_WRAPPED_ETH]: { precision: 18, format: "0,0.00[0000000000000000]" },
     [TOKEN_DAI]: { precision: 18, format: "0,0.00[0000000000000000]" },
     [TOKEN_MAKER]: { precision: 18, format: "0,0.00[0000000000000000]" },
+    [TOKEN_DONUT]: { precision: 18, format: "0,0.00[0000000000000000]" },
     [TOKEN_DIGIX]: { precision: 9, format: "0,0.00[0000000]" },
     [TOKEN_GOLEM]: { precision: 18, format: "0,0.00[0000000000000000]" },
     // [TOKEN_WRAPPED_GNT]: { precision: 18, format: "0,0.00[0000000000000000]" },

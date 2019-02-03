@@ -103,6 +103,7 @@ const init = networkName => {
       [TOKEN_DAI]: DAI,
       [TOKEN_MAKER]: MKR,
       [TOKEN_DIGIX]: DGD,
+      [TOKEN_DONUT]: DONUT,
       // [TOKEN_GOLEM]: GNT,
       [TOKEN_RHOC]: RHOC
     },
